@@ -3,7 +3,7 @@ package pl.lublin.wsei.java.cwiczenia;
 public class Main {
     /**
      *
-     * @param args
+     *  @param args
      */
     public static void main(String[] args) {
 	// Komentarz pierwszy
