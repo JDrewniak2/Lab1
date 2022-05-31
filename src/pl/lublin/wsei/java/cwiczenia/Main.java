@@ -1,20 +1,20 @@
 package pl.lublin.wsei.java.cwiczenia;
 
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
 
-        int a = 3;
-        double c;
-        double b = 4.21;
-        String s = "jakiś tekst";
+        Scanner input = new Scanner(System.in);
+        int num1 = 0, num2 = 0;
+        do {
+            System.out.print("Podaj liczby które mam dodać: ");
+            num1 = input.nextInt();
+            num2 = input.nextInt();
+            if ((num1 == 0) || (num2 == 0)) break;
+            System.out.printf("Wynik dodawania %d + %d = %d%n", num1, num2, num1 + num2);
+        } while (true);
 
-        System.out.printf("a = %d, b = %.2f, s = %20s %n",a,b,s);
-        System.out.printf("Nazwaliśmy to "+"witaminą B3");
-        System.out.printf("alfa/tsin(alfa)\n");
-        for (int i = 0; i < 370; i+=10)
-            System.out.printf("%d\t%f\t\n", i, Math.sin(i/360.0*2*Math.PI));
-        for (int j = 1; j < 100; j = j * 2)
-            System.out.printf("%d\t%f\t%s\n", j, c = Math.log(j) / Math.log(2), c + j );
     }
 }
